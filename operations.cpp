@@ -1,5 +1,6 @@
 #include "operations.h"
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 double add(double a, double b) {
@@ -13,5 +14,15 @@ if (b != 0) return a / b;
 else {
 cout << "Error: División por cero\n";
 return 0;
+}
+
+double power(double base, int exponent) {
+    double result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
 }
 }
