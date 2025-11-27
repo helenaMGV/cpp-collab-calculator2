@@ -1,5 +1,6 @@
 #include "operations.h"
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 double add(double a, double b) {
@@ -14,4 +15,8 @@ else {
 cout << "Error: División por cero\n";
 return 0;
 }
+}
+
+double power(double a, double b){
+  return pow(a, b);
 }
