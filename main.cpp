@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "operations.h"
 using namespace std;
 int main() {
@@ -15,6 +16,7 @@ case 1: cout << "Resultado: " << add(a, b); break;
 case 2: cout << "Resultado: " << subtract(a, b); break;
 case 3: cout << "Resultado: " << multiply(a, b); break;
 case 4: cout << "Resultado: " << divide(a, b); break;
+case 5: cout << "Resultado: " << logarithm(a, b);break;
 default: cout << "Opción inválida";
 }
 cout << endl;
